@@ -9,26 +9,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script type="module" src="./script.js"></script>
 </head>
-<body>
+<body class="bg-secondary">
     
-    <nav id="navbar">
+    <nav id="navbar" class="container">
 
         <!-- <form id="form"> -->
           <div class="mb-3">
             <label for="textInput" class="form-label">Campo di testo</label>
-            <input type="text" class="form-control" id="textInput" placeholder="Inserisci qualcosa">
+            <input type="text" class="form-control" id="textInput" placeholder="Who are you looking for?">
           </div>
-          <div class="mb-3">
-            <label for="dropdownSelect" class="form-label">Dropdown</label>
-            <select class="form-select" id="dropdownSelect">
+          <div class="mb-3 gap-3 d-flex align-items-center justify-content-center">
+            <label for="dropdownSelect" class="form-label">Filter</label>
+            <select class="form-select w-25" id="dropdownSelect">
               <option value="Name">Name</option>
               <option value="Username">Username</option>
               <option value="Email">Email</option>
             </select>
           </div>
-          <button id="search" type="submit" class="btn btn-primary">Search</button>
-        <!-- </form> -->
-        <button id="showAll"><a href="#">Show all</a></button>  
+          <div class="text-center">
+            <button id="search" type="submit" class="btn btn-success">Search</button>
+          </div>
+            <!-- </form> -->
+          <button id="showAll"><a href="#">Show all</a></button>  
     </nav>
 
     <main>
